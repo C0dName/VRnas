@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;700&display=swap');
+
+.Main2AboutUsGlobalPosition {
+    width: 1238px;
+    height: 645px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transform: translateY(50px); /* Начальное смещение вниз */
+    transition: opacity 1s ease, transform 1.5s ease;
+}
+.Main2AboutUsGlobalPosition.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.Main2AboutUsLeftBlock {
+    position: relative;
+    width: 609px;
+    height: 622px;
+}
+.Main2AboutUsLeftLight1 {
+    position: absolute;
+    width: 364.62px;
+    height: 608.06px;
+    background: linear-gradient(98.54deg, rgba(28, 196, 249, 0.5) 0.72%, rgba(254, 105, 254, 0.5) 90.69%);
+    filter: blur(105px);
+    transform: rotate(-90deg);
+}
+.Main2AboutUsLeftLight2 {
+    position: absolute;
+    width: 398.94px;
+    height: 496.53px;
+    margin-top: 125px;
+    background: #252532;
+}
+.Main2AboutUsLeftHuman {
+    position: absolute;
+    filter: blur(0.5px);
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+    will-change: transform;
+}
+.Main2AboutUsRightBlock {
+    width: 562px;
+    height: 549px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Main2AboutUsRightTextTop {
+    /* ABOUT US */
+    width: 95px;
+    height: 21px;
+    margin: 0 0 0 0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    /* Градиент для текста */
+    background: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.Main2AboutUsRightText1 {
+    width: 562px;
+    height: 174px;
+    margin: 0 0 0 0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+}
+.Main2AboutUsRightText2 {
+    width: 528px;
+    height: 112px;
+    margin: 0 0 0 0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #D1D1D1;
+}
+.Main2AboutUsRightTextUlBottom {
+    width: 218px;
+    height: 112px;
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.Main2AboutUsRightTextBottom {
+    width: 218px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    color: #FFFFFF;
+}
+.Main2AboutUsRightSpan {
+    width: 168px;
+    height: 50px;
+    background: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    animation: slideIn 0.5s ease 0.4s forwards; /* Анимация длится 1 секунду */
+    transition: all 0.3s ease;
+}
+.Main2AboutUsRightSpan:hover {
+    opacity: 0.8;
+}
