@@ -1,12 +1,24 @@
-import React from 'react';
+'use client';
+import React, {useState, useEffect} from 'react';
 import classes from './Header.module.css';
 import Link from 'next/link'
 
 
 const Header = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 10);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <div>
-            <div className={classes.headerTop}>
+            <div className={`${classes.headerTop} ${isScrolled ? classes.headerTopScrolled : ''}`}>
                 <img className={classes.logoTop} src="/Frame 22.png" alt="лого сайта"/>
                 <div className={classes.navBtnTop}>
                     <ul className={classes.navBtnPosition}>
