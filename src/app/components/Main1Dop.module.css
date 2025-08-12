@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;700&display=swap');
+
+.main1DopGlobalPosition {
+    width: 1200px;
+    height: 357px;
+    background: #252532;
+    border: 1px solid #B0B0B2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 0;
+    transform: translateY(50px); /* Начальное смещение вниз */
+    transition: opacity 1s ease, transform 1.5s ease;
+}
+.main1DopGlobalPosition.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.main1DopBlock {
+    width: 325px;
+    height: 262px;
+}
+.main1DopTextTop {
+    width: 87px;
+    height: 26px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    color: #FFFFFF;
+}
+.main1DopTextBottom {
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #B0B0B2;
+}
+
