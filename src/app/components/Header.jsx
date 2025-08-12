@@ -17,7 +17,7 @@ const Header = () => {
     }, []);
 
     return (
-        <div>
+        <div className={classes.headerGlobalPosition}>
             <div className={`${classes.headerTop} ${isScrolled ? classes.headerTopScrolled : ''}`}>
                 <img className={classes.logoTop} src="/Frame 22.png" alt="лого сайта"/>
                 <div className={classes.navBtnTop}>

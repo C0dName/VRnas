@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;700&display=swap');
+.headerGlobalPosition {
+    width: auto;
+    display: flex;
+}
 .headerTop {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 1440px;
     height: 114px;
     transition: all 0.3s ease;
     background-color: transparent;
+    z-index: 1000;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }
 .headerTopScrolled {
-    height: 60px; /* Уменьшаем на 20px */
-    background-color: rgba(128, 128, 128, 0.5); /* Серый с 50% прозрачности */
+    height: 80px; /* Уменьшаем на 20px */
+    background-color: rgba(37, 37, 50, 0.5); /* Серый с 50% прозрачности */
 }
 .navBtnTop {
     width: 100%;
@@ -27,7 +32,7 @@
     margin: 0;
     display: flex;
     justify-content: space-between;
-    z-index: 2;
+    z-index: 100;
 }
 .navBtn {
     font-family: 'Chakra Petch', sans-serif;
@@ -41,7 +46,7 @@
     opacity: 0.8;
     cursor: pointer;
     display: flex;
-    z-index: 2;
+    z-index: 100;
 }
 .navBtn:hover {
     opacity: 1;
@@ -54,7 +59,6 @@
 .logoTop {
     width: 101px;
     height: 30px;
-    margin-left: 120px;
 }
 .spanTopBorder {
     position: relative;
@@ -92,6 +96,6 @@
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: -1;
 }
 

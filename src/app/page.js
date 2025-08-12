@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import Header from './components/Header'
+import Main1 from './components/Main1'
+import classes from './PageHome.module.css'
+
 
 export default function Home() {
     return (
-        <div style={{backgroundColor: "black",
-        width: "1440px"}}>
-            <div style={{marginTop: "2000px"}}>penis</div>
-
+        <div className={classes.pageHomePosition}>
+            <Main1/>
+            {/*<h1 style={{marginTop: "2000px"}}>penis</h1>*/}
         </div>
     )
 }

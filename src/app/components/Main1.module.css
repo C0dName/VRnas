@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;700&display=swap');
+
+.main1GlobalPosition {
+    width: 1440px;
+    height: 754px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.main1Text1Position {
+    width: 540px;
+    height: 448px;
+    margin-top: 201px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.slideInMain1Text1 {
+    margin: 0;
+    width: 540px;
+    height: 166px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 83px;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+    opacity: 0; /* Начальная прозрачность */
+    transform: translateY(100px); /* Начальное положение (сдвиг вправо) */
+    animation: slideIn 0.5s ease forwards; /* Анимация длится 1 секунду */
+}
+.slideInMain1Text2 {
+    margin: 0;
+    width: 446px;
+    height: 56px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #D1D1D1;
+    opacity: 0; /* Начальная прозрачность */
+    transform: translateY(100px); /* Начальное положение (сдвиг вправо) */
+    animation: slideIn 1s ease forwards; /* Анимация длится 1 секунду */
+}
+.slideInMain1Span {
+    width: 206px;
+    height: 50px;
+    background: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
+    /* discover more */
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0; /* Начальная прозрачность */
+    transform: translateY(100px); /* Начальное положение (сдвиг вправо) */
+    animation: slideIn 0.5s ease 0.4s forwards; /* Анимация длится 1 секунду */
+    transition: all 0.3s ease;
+}
+.slideInMain1Span:hover {
+    box-shadow:
+            0 0 25px rgba(12, 186, 241, 0.7), /* Голубая часть тени */
+            0 0 25px rgba(233, 92, 233, 0.7);   /* Розовая часть тени */
+}
+.main1LightHumanPosition {
+    width: 526px;
+    height: 567px;
+    margin-left: 115px;
+    margin-top: 127px;
+    z-index: 2;
+    display: flex;
+}
+.slideInMain1LightPosition {
+    width: 340px;
+    height: 567px;
+    margin-top: 216px;
+    margin-right: 200px;
+    background: linear-gradient(98.54deg, rgba(28, 196, 249, 0.8) 0.72%, rgba(254, 105, 254, 0.8) 90.69%);
+    filter: blur(105px);
+    opacity: 0; /* Начальная прозрачность */
+    transform: translateX(100px); /* Начальное положение (сдвиг вправо) */
+    animation: slideIn 1.5s ease forwards; /* Анимация длится 1 секунду */
+}
+.slideInMain1HumanPosition {
+    position: absolute;
+    width: 526px;
+    height: 626px;
+    margin-top: 127px;
+    margin-left: 795px;
+    filter: blur(0.7px);
+    opacity: 0; /* Начальная прозрачность */
+    transform: translateX(100px); /* Начальное положение (сдвиг вправо) */
+    animation: slideIn 1.5s ease forwards; /* Анимация длится 1 секунду */
+}
+@keyframes slideIn {
+    to {
+        opacity: 1; /* Полная видимость */
+        transform: translateX(0); /* Конечное положение (на место) */
+    }
+}
+.slideInMain1ClientBlockPosition {
+    position: relative;
+    width: 278px;
+    height: 51px;
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    opacity: 0; /* Начальная прозрачность */
+    transform: translateY(100px); /* Начальное положение (сдвиг вправо) */
+    animation: slideIn 1s ease forwards; /* Анимация длится 1 секунду */
+}
+.main1TextClient {
+    margin-left: 18px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.main1TextClientSmall {
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.main1LineClient {
+    position: absolute;
+    width: 47px;
+    height: 7px;
+    margin-top: 18px;
+    margin-left: 139px;
+}
