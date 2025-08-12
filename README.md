@@ -1,4 +1,5 @@
 Повторяю бсплатный макет Figma. Тренировка анимациий, и первая работа с Next.JS
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
