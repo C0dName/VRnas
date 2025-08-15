@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;700&display=swap');
+
+.main4GlobalPosition {
+    width: 1302px;
+    height: 700px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main4BlockPosition {
+    width: 549px;
+    height: 699px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main4Title {
+    width: 190px;
+    height: 21px;
+    margin: 0 0 0 0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    /* Градиент для текста */
+    background: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.main4Title2 {
+    width: 546px;
+    height: 116px;
+    margin: 0 0 0 0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+}
+.main4Subtitle {
+    width: 548px;
+    height: 38px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    color: #FFFFFF;
+    border-bottom: 2px solid rgb(255, 255, 255, 0.35);
+    cursor: pointer;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.slideText {
+    margin: 0 0 0 0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #D1D1D1;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+/* Открытый параграф */
+.open {
+    width: 548px;
+    max-height: 112px;
+    opacity: 1;
+}
+.main4RightBlockPosition {
+    width: 609px;
+    height: 699px;
+}
+.blur {
+    position: absolute;
+    width: 364.62px;
+    height: 608.06px;
+    margin-left: 200px;
+    background: linear-gradient(98.54deg, rgba(28, 196, 249, 0.5) 0.72%, rgba(254, 105, 254, 0.5) 90.69%);
+    filter: blur(105px);
+    transform: rotate(-90deg);
+}
+.blurBox{
+    position: absolute;
+    width: 398.94px;
+    height: 496.53px;
+    margin-left: 200px;
+    opacity: 0.5;
+    background: #252532;
+}
+.main4HumanImg {
+    width: 563px;
+    height: 662px;
+    position: absolute;
+    margin-left: 100px;
+    filter: blur(0.5px);
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+    will-change: transform;
+}
