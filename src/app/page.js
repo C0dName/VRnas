@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Main1 from './components/Main1'
 import Main1Dop from './components/Main1Dop'
 import Main2AboutUs from './components/Main2AboutUs'
+import Main3OurService from './components/Main3OurService'
 import classes from './PageHome.module.css'
 
 
@@ -12,6 +13,7 @@ export default function Home() {
             <Main1/>
             <Main1Dop/>
             <Main2AboutUs/>
+            <Main3OurService/>
 
 
             {/*<h1 style={{marginTop: "2000px"}}>penis</h1>*/}

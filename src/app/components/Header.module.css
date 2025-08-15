@@ -16,8 +16,8 @@
     justify-content: space-between;
 }
 .headerTopScrolled {
-    height: 80px; /* Уменьшаем на 20px */
-    background-color: rgba(37, 37, 50, 0.5); /* Серый с 50% прозрачности */
+    height: 80px;
+    background-color: rgba(37, 37, 50, 0.5);
 }
 .navBtnTop {
     width: 100%;
@@ -60,42 +60,54 @@
     width: 101px;
     height: 30px;
 }
-.spanTopBorder {
-    position: relative;
-    width: 126px;
-    height: 52px;
-    margin-left: 241px;
-    background: linear-gradient(to right, #0CBAF1, #E95CE9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 2;
-}
-.spanTopBorder .content {
-    width: 124px;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.9);
-    cursor: pointer;
-    font-family: 'Chakra Petch', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 28px;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    transition: background 0.3s ease;
-}
-.content:hover {
-    background-color: rgba(0, 0, 0, 0);
-}
+
 .decorationHeadPosition {
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
+}
+.spanTopBorder {
+    position: relative;
+    width: 126px;
+    height: 52px;
+    margin-left: 241px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    text-align: center;
+    z-index: 10;
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: linear-gradient(90deg, #0CBAF1, #E95CE9) 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    outline: none;
+    overflow: hidden;
+}
+
+.spanTopBorder::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #0CBAF1, #E95CE9);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+.spanTopBorder:hover::before {
+    opacity: 1;
+}
+
+.spanTopBorder:hover {
+    color: #fff;
 }
 

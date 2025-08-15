@@ -39,9 +39,7 @@ const Header = () => {
                         </li>
                     </ul>
                 </div>
-                <div className={classes.spanTopBorder}>
-                    <span className={classes.content}>Contact us</span>
-                </div>
+                    <button className={classes.spanTopBorder}>Contact us</button>
 
             </div>
             <img className={classes.decorationHeadPosition} src="/decorationHead.svg" alt=""/>
